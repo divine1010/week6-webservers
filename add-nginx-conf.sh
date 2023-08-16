@@ -11,9 +11,6 @@ server {
     root /var/www/static-html-website;
     index website.html;
 
-    location / {
-        try_files \$uri \$uri/ =404;
-    }
 }
 EOF"
 sudo ln -s "$config_file" "/etc/nginx/sites-enabled/"
